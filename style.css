@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+  }
+  
+  .button.off {
+    background-color: #DC3545;
+  }
+  
