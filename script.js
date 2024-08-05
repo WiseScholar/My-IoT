@@ -1,5 +1,5 @@
 function toggleLED(state) {
-    fetch('/LED/' + state)
+    fetch('http://192.168.77.69/LED/' + state)
         .then(response => response.text())
         .then(data => {
             console.log(data);
