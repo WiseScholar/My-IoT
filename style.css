@@ -1,28 +1,102 @@
+/* Previous styles */
+
 body {
+  padding-top: 50px;
+  background-color: #f8f9fa;
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333333;
 }
 
-.button {
-  padding: 15px 30px;
-  margin: 10px;
-  font-size: 16px;
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #495057;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #ffffff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.tab-content {
+  border: 1px solid #dee2e6;
+  border-top: none;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100px; /* Adjust the width as needed */
+  height: 25px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+  border-radius: 12.5px; /* Make the slider rounded */
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px; /* Adjust the width as needed */
+  height: 25px;
+  background: #007bff;
   cursor: pointer;
-  border: none;
-  color: #fff;
-  background-color: #007BFF;
-  border-radius: 5px;
+  border-radius: 50%; /* Make the knob rounded */
+  transition: background .2s;
 }
 
-.button.off {
-  background-color: #DC3545;
+.slider::-moz-range-thumb {
+  width: 25px; /* Adjust the width as needed */
+  height: 25px;
+  background: #007bff;
+  cursor: pointer;
+  border-radius: 50%; /* Make the knob rounded */
+  transition: background .2s;
+}
+
+.slider.on::-webkit-slider-thumb {
+  background: #28a745;
+}
+
+.slider.on::-moz-range-thumb {
+  background: #28a745;
+}
+
+#ledStatus {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #777777;
 }
